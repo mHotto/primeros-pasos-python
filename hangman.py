@@ -12,7 +12,7 @@ while contador < 6:
    if letrascomunes:
     print("the word have this letters:", letrascomunes)
    else:
-    print("no matching")
+    print("no matching words")
 
  contador += 1
  print("try number:",contador,"/6" )

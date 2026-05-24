@@ -1,7 +1,7 @@
 import random
 salario=100
 caras = ["tails", "heads"]
-print("money initial:", salario, "if u wanna leave")
+print("money initial:", salario)
 while salario>0:
  apuesta = int(input("how many want u bet?"))
  if (apuesta > salario):
@@ -17,14 +17,12 @@ while salario>0:
    print("nice, currect money:", salario)
   else:
    salario -= int(apuesta)
-   print("u lose, current money:", salario)
- elif salario<1:
-  break 
+   print("u lose, current money:", salario) 
  elif tipo == "coin":
   numero = input("pick heads or tails: ")
   moneda=random.choice(caras)
   print("result: ", moneda)
-  if (numero == moneda):
+  if (int(numero == moneda)):
    salario= salario + apuesta*2
    print("nice, currect money:", salario)
   else:
