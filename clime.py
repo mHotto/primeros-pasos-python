@@ -12,5 +12,5 @@ while True:
         crn = datosclima['current_condition'][0]
         temperatura = crn['temp_C']
         humedad = crn['humidity']
-        print(f"temp: {temperatura}°C\n humedity: {humedad} \n")
+        print(f"temp: {temperatura}°C\nhumedity: {humedad} \n")
         
